@@ -27,11 +27,13 @@ plot(v4,t4)
 
 
 
-Vx = vertcat(v1,v1)
+Vx = vertcat(v0,v0)
 Vx = vertcat(Vx,Vx)
 Vx = vertcat(Vx,Vx)
 Vx = vertcat(Vx,Vx)
-audiowrite('sig1_better.wav',Vx,4166)
+Vx = Vx*10000 % Output from transducor into pre-amp
+
+%audiowrite('sigX.wav',Vx,4166)
 
 
 
