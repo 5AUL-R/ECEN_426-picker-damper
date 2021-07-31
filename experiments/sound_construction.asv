@@ -3,8 +3,7 @@
 % will sound after going through the pre-amplifier, mixer box
 
 % 2500 samples between -0.03 and 0.03 (Delta 0.06) seconds
-% Sample rate is therefore 4166.666... Hz
-f_s = 4166;
+% Sample rate is therefore 41
 
 clear
 clc
@@ -24,14 +23,8 @@ figure()
 plot(v3,t3)
 figure()
 plot(v4,t4)
-
-
-
-Vx = vertcat(v1,v1)
-Vx = vertcat(Vx,Vx)
-Vx = vertcat(Vx,Vx)
-Vx = vertcat(Vx,Vx)
-audiowrite('sig1_better.wav',Vx,4166)
+figure()
+plot(v5,t5)
 
 
 
